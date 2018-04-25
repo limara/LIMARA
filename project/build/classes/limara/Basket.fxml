@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Pane" prefHeight="726.0" prefWidth="1017.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="limara.BasketController">
+    <children>
+        <TableView fx:id="meds" layoutX="31.0" layoutY="68.0" prefHeight="570.0" prefWidth="971.0">
+            <columns>
+                <TableColumn fx:id="med_ID" prefWidth="29.333290100097656" text="ID" />
+                <TableColumn fx:id="medName" prefWidth="123.4666519165039" text="Name" />
+                <TableColumn fx:id="Count" prefWidth="62.13330078125" text="Count" />
+                <TableColumn fx:id="Price" prefWidth="56.53337097167969" text="Price" />
+                <TableColumn fx:id="Consist" prefWidth="153.3333740234375" text="Consist" />
+                <TableColumn fx:id="forDiseases" prefWidth="145.06661987304688" text="For diseases" />
+                <TableColumn fx:id="Meds" maxWidth="100000.0" prefWidth="265.33331298828125" text="Date">
+                    <columns>
+                        <TableColumn fx:id="DateCreate" prefWidth="81.86663818359375" text="Create:" />
+                        <TableColumn fx:id="DateExpire" minWidth="0.800048828125" prefWidth="71.73333740234375" text="Expire:" />
+                    </columns>
+                </TableColumn>
+                <TableColumn fx:id="Temperature" prefWidth="250.39998779296877" text="Temperature" />
+            </columns>
+        </TableView>
+      <Button layoutX="532.0" layoutY="654.0" mnemonicParsing="false" onAction="#Remove" prefHeight="41.0" prefWidth="458.0" text="Remove" />
+      <Button layoutX="32.0" layoutY="654.0" mnemonicParsing="false" onAction="#Buy" prefHeight="44.0" prefWidth="478.0" text="Buy" />
+      <Label fx:id="cena" layoutX="239.0" layoutY="17.0" prefHeight="47.0" prefWidth="490.0" text="Label">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
